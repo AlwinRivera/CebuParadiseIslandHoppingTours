@@ -1,0 +1,492 @@
+:root {
+  --deep-sea: #0e3b43;
+  --lagoon: #2f8f94;
+  --sand: #f4ead8;
+  --sun: #e8a33d;
+  --coral: #e2593c;
+  --ink: #182b2d;
+  --whatsapp: #25d366;
+  --viber: #7360f2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+#voyage,
+#addons,
+#watersports,
+#gallery,
+#contact {
+  scroll-margin-top: 60px;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--ink);
+  background: var(--sand);
+  padding-top: 64px;
+}
+h1,
+h2,
+h3,
+h4,
+.display-font {
+  font-family: "Playfair Display", serif;
+}
+a {
+  color: var(--lagoon);
+}
+.section-pad {
+  padding: 88px 0;
+}
+@media (max-width: 768px) {
+  .section-pad {
+    padding: 56px 0;
+  }
+}
+
+/* ---------- NAV ---------- */
+.navbar-custom {
+  background: var(--deep-sea);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+.navbar-custom .navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: var(--sand) !important;
+  font-size: 1.15rem;
+}
+.navbar-custom .navbar-brand small {
+  display: block;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.65rem;
+  letter-spacing: 0.03em;
+  color: rgba(244, 234, 216, 0.6);
+}
+.navbar-custom .nav-link {
+  color: rgba(244, 234, 216, 0.85) !important;
+  font-weight: 500;
+  font-size: 0.92rem;
+}
+.navbar-custom .nav-link:hover {
+  color: #fff !important;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28244,234,216,0.85%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.btn-wa {
+  background: var(--whatsapp);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+}
+.btn-wa:hover {
+  background: #1fb958;
+  color: #fff;
+}
+.btn-viber {
+  background: var(--viber);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+}
+.btn-viber:hover {
+  background: #5f4fe0;
+  color: #fff;
+}
+.btn-sm-cta {
+  padding: 0.4rem 0.9rem;
+  font-size: 0.82rem;
+  border-radius: 30px;
+}
+.btn-lg-cta {
+  padding: 0.85rem 1.9rem;
+  font-size: 1rem;
+  border-radius: 30px;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+  position: relative;
+  background: var(--deep-sea);
+  overflow: hidden;
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.55;
+  /* transform: scaleX(-1); */
+}
+.hero-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, rgba(14, 59, 67, 0.71) 100%);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  padding: 60px 0;
+}
+.hero-content .eyebrow {
+  color: var(--sun);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  font-size: 0.95rem;
+}
+.hero-content h1 {
+  font-size: 3.1rem;
+  font-weight: 700;
+  line-height: 1.12;
+  margin: 0.5rem 0 1.1rem;
+}
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.1rem;
+  }
+}
+.hero-content p.lead {
+  color: rgba(244, 234, 216, 0.9);
+  font-size: 1.15rem;
+  max-width: 520px;
+}
+.hero-quote {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--sand);
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  border-left: 3px solid var(--sun);
+  padding-left: 1rem;
+  max-width: 480px;
+}
+
+/* ---------- WAVE DIVIDER ---------- */
+.wave-divider {
+  display: block;
+  width: 100%;
+  height: 44px;
+}
+
+/* ---------- ABOUT / STRIP ---------- */
+.about-strip {
+  background: #fff;
+}
+.stat-block {
+  text-align: center;
+  padding: 0 10px;
+}
+.stat-block .num {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 2.1rem;
+  color: var(--deep-sea);
+}
+.stat-block .label {
+  font-size: 0.85rem;
+  color: #6b7a7b;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.about-text h2 {
+  color: var(--deep-sea);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.about-text p {
+  font-size: 1.05rem;
+  color: #3c4f50;
+}
+
+/* ---------- VOYAGE / ISLAND PICKER ---------- */
+.section-heading .eyebrow {
+  color: var(--coral);
+  font-weight: 600;
+  font-size: 0.88rem;
+  letter-spacing: 0.02em;
+}
+.section-heading h2 {
+  color: var(--deep-sea);
+  font-weight: 700;
+  font-size: 2.1rem;
+  margin: 0.3rem 0 0.6rem;
+}
+.section-heading p {
+  color: #516465;
+  max-width: 640px;
+}
+
+.voyage-item {
+  display: flex;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(14, 59, 67, 0.1);
+}
+.voyage-item:last-child {
+  border-bottom: none;
+}
+.voyage-num {
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--deep-sea);
+  color: var(--sun);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+.voyage-item h5 {
+  font-weight: 700;
+  color: var(--deep-sea);
+  margin-bottom: 0.15rem;
+}
+.voyage-item .tag {
+  display: inline-block;
+  background: var(--sun);
+  color: var(--deep-sea);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 20px;
+  margin-left: 0.5rem;
+}
+.voyage-item .tag.coral {
+  background: var(--coral);
+  color: #fff;
+}
+
+.voyage-panel {
+  background: var(--deep-sea);
+  color: var(--sand);
+  border-radius: 14px;
+  padding: 2rem;
+}
+.voyage-panel h4 {
+  color: var(--sun);
+  font-weight: 700;
+}
+.voyage-panel .hours {
+  font-size: 2.2rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* ---------- ACCORDIONS (fees / add-ons) ---------- */
+.card-flat {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 10px rgba(14, 59, 67, 0.06);
+}
+.card-flat .card-header {
+  background: #fff;
+  border: none;
+  padding: 0;
+}
+.card-flat .card-header button {
+  width: 100%;
+  text-align: left;
+  padding: 1.1rem 1.4rem;
+  font-weight: 600;
+  color: var(--deep-sea);
+  text-decoration: none;
+  font-size: 1.02rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-flat .card-header button:after {
+  content: "+";
+  font-size: 1.4rem;
+  color: var(--coral);
+  font-weight: 400;
+}
+.card-flat .card-header button.collapsed:after {
+  content: "+";
+}
+.card-flat .card-header button[aria-expanded="true"]:after {
+  content: "\2212";
+}
+.card-flat .card-body {
+  padding: 0 1.4rem 1.3rem;
+  color: #41504f;
+}
+
+.fee-table {
+  width: 100%;
+  font-size: 0.95rem;
+}
+.fee-table td {
+  padding: 0.4rem 0;
+  border-bottom: 1px dashed rgba(14, 59, 67, 0.12);
+}
+.fee-table td:last-child {
+  text-align: right;
+  font-weight: 600;
+  color: var(--deep-sea);
+  white-space: nowrap;
+}
+
+.check-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 0.8rem;
+}
+@media (max-width: 576px) {
+  .check-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.check-grid div {
+  font-size: 0.95rem;
+}
+.check-grid div:before {
+  content: "\2713";
+  color: var(--lagoon);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+/* ---------- WATER SPORTS CARDS ---------- */
+.sport-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 1.6rem;
+  height: 100%;
+  box-shadow: 0 2px 14px rgba(14, 59, 67, 0.07);
+  border-top: 4px solid var(--lagoon);
+}
+.sport-card h5 {
+  font-weight: 700;
+  color: var(--deep-sea);
+}
+.sport-card .price {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: var(--coral);
+  font-size: 1.4rem;
+}
+.sport-card .dur {
+  color: #6b7a7b;
+  font-size: 0.85rem;
+}
+
+/* ---------- GALLERY ---------- */
+.gallery-shot {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.gallery-shot img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform 0.35s ease;
+  object-fit: cover;
+}
+.gallery-shot:hover img {
+  transform: scale(1.04);
+}
+
+/* ---------- TESTIMONIAL ---------- */
+.testimonial-band {
+  background: var(--lagoon);
+  color: #fff;
+}
+.testimonial-band blockquote {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 500;
+  max-width: 720px;
+  margin: 0 auto 1.2rem;
+  line-height: 1.4;
+}
+.testimonial-band .stars {
+  color: var(--sun);
+  letter-spacing: 0.15em;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+.testimonial-band .author {
+  font-weight: 600;
+}
+
+/* ---------- PICKUP ---------- */
+.pickup-item {
+  text-align: center;
+  padding: 1.6rem 1rem;
+}
+.pickup-item .icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--sand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  color: var(--coral);
+  font-size: 1.3rem;
+}
+.pickup-item h6 {
+  font-weight: 700;
+  color: var(--deep-sea);
+}
+
+/* ---------- CONTACT / CTA ---------- */
+.cta-band {
+  background: var(--deep-sea);
+  color: var(--sand);
+  position: relative;
+  overflow: hidden;
+}
+.cta-band h2 {
+  color: #fff;
+  font-weight: 700;
+}
+.cta-band .contact-line {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.9rem;
+  font-size: 1.02rem;
+}
+.cta-band .contact-line span.ic {
+  color: var(--sun);
+  width: 20px;
+  text-align: center;
+}
+
+footer {
+  background: #0a2a30;
+  color: rgba(244, 234, 216, 0.65);
+  padding: 32px 0;
+  font-size: 0.88rem;
+}
+footer a {
+  color: var(--sand);
+}
+
+.price-disclaimer {
+  background: #fff;
+  border-left: 4px solid var(--sun);
+  padding: 0.9rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  color: #516465;
+}
