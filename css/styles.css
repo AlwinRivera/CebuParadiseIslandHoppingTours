@@ -95,6 +95,32 @@ a {
   background: #5f4fe0;
   color: #fff;
 }
+.btn-fb {
+  background: #1877f2;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+}
+.btn-fb:hover {
+  background: #145fc4;
+  color: #fff;
+}
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0 !important;
+}
+.btn-icon-lg {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+.btn-icon img {
+  display: block;
+}
 .btn-sm-cta {
   padding: 0.4rem 0.9rem;
   font-size: 0.82rem;
