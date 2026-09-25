@@ -334,6 +334,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: unset;
 }
 .card-flat .card-header button:after {
   content: "+";
